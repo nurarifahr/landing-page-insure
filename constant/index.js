@@ -10,10 +10,6 @@ const navLinks = [
     {
         id: 3,
         title: "ACCOUNT"
-    },
-    {
-        id: 4,
-        title: "VIEW PLANS"
     }
 ];
 
@@ -40,15 +36,19 @@ const contentLists = [
 
 const socials = [
     {
+        index: 1,
         imgPath: "/images/icon-facebook.svg",
     },
     {
+        index: 2,
         imgPath: "/images/icon-twitter.svg",
     },
     {
+        index: 3,
         imgPath: "/images/icon-pinterest.svg",
     },
     {
+        index: 4,
         imgPath: "/images/icon-instagram.svg",
     },
 ];

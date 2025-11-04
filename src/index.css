@@ -29,6 +29,9 @@ body{
   h2{
     @apply font-dm-serif-display text-2xl text-center text-neutral-gray-950;
   }
+  h3{
+      @apply text-center
+    }
   p{
     @apply text-center ;
   }
@@ -48,7 +51,28 @@ body{
     }
 
     div {
-      @apply flex justify-between p-6;
+      @apply flex justify-between p-6 
+      md:items-center;
+    }
+    /* .navbar-menu{
+      @apply absolute bg-neutral-gray-950 top-10 left-0 w-full h-screen transform transition-transform duration-300 ease-in-out
+      md:static md:translate-y-0 md:w-auto md:bg-amber-200 md:h-0;
+    } */
+         .navbar-menu{
+      @apply absolute bg-neutral-gray-950 top-0 left-0 w-full h-screen transform transition-transform duration-300 ease-in-out
+      md:static md:w-auto md:bg-transparent md:h-0 md:translate-y-0;
+    }
+    ul{
+      @apply flex flex-col items-center mx-auto text-neutral-gray-50 font-semibold w-full
+      md:text-neutral-gray-700 md:flex-row md:gap-10 md:justify-center
+    }
+    .list-menu{
+      @apply py-3
+      md:py-0;
+    }
+    .button-menu{
+      @apply border py-1 border-neutral-gray-50 mt-4 w-full
+      md:w-auto md:mt-0 md:border-neutral-gray-950 md:px-6 md:text-neutral-gray-950;
     }
   }
 
@@ -57,6 +81,9 @@ body{
     
     div{
       @apply px-6 py-16 space-y-6 flex flex-col justify-center items-center;
+    }
+    .picture-header{
+      @apply object-cover w-full h-auto
     }
   }
 
@@ -76,6 +103,14 @@ body{
     @apply absolute  right-6 translate-y-0.5
   }
 
+  .pattern-footer{
+    @apply absolute inset-0
+  }
+
+  .pattern-mobile-nav{
+    @apply absolute bottom-15 left-0
+  }
+
   .flex-center {
      @apply flex flex-col justify-center items-center;
   }
@@ -84,7 +119,7 @@ body{
     @apply mt-40 px-6;
 
     hr{
-      @apply w-1/2 translate-x-1/2 border-neutral-gray-700;
+      @apply w-1/2 translate-x-1/2 border-neutral-gray-50;
     }
     h1{
       @apply pt-10 pb-20;
@@ -106,10 +141,22 @@ body{
   }
 
   #footer{
-    @apply bg-pblue-500 w-full h-auto ;
+    @apply relative bg-gray-50 w-full h-auto py-20;
 
-    ul{
-      @apply flex flex-row justify-around gap-5
+    img{
+      @apply pb-8 object-cover z-10;
+    }
+    .socials{
+      @apply flex flex-row justify-around gap-5 items-center z-10;
+    }
+    hr{
+      @apply w-11/12 border-gray-200;
+    }
+    h3{
+      @apply font-semibold text-neutral-gray-700 py-6
+    }
+    p{
+      @apply font-semibold leading-8
     }
   }
 

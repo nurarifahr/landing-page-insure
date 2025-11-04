@@ -6,7 +6,7 @@ const Header = () => {
     <div id='header'>
       <picture>
         <source media="(min-width: 768px)" srcSet="/images/image-intro-desktop.jpg"/>
-        <img 
+        <img className='picture-header'
             src="/images/image-intro-mobile.jpg" alt="image-intro" />
       </picture>
       <div className='flex-center'>
