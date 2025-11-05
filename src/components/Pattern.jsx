@@ -9,8 +9,10 @@ const Pattern = () => {
             <img 
                 src="/images/bg-pattern-how-we-work-mobile.svg" alt="image-intro" />
         </picture>
-        <h1>Find out more about how we work</h1>
-        <button className='button'>HOW WE WORK</button>
+        <div className='flex-left flex-center'>
+          <h1>Find out more about how we work</h1>
+          <button className='button'>HOW WE WORK</button>
+        </div>
       </div>
     </>
   )

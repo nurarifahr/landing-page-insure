@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <>
     <div id='header'>
-      <picture>
+      <picture className='picture-header'>
         <source media="(min-width: 768px)" srcSet="/images/image-intro-desktop.jpg"/>
-        <img className='picture-header'
+        <img
             src="/images/image-intro-mobile.jpg" alt="image-intro" />
       </picture>
       <div className='flex-center'>
@@ -15,6 +15,7 @@ const Header = () => {
             <img 
                 src="/images/bg-pattern-intro-left-mobile.svg" alt="image-intro" />
         </picture>
+        <hr className='hidden md:block line-hr'/>
         <h1>Humanizing your insurance.</h1>
         <p>Get your life insurance coverage easier and faser. We blend our expertise and technology to help you find the pan that's right for you. Ensure you and your loved ones are protected.</p>
         <button className='button'>VIEW PLANS</button>

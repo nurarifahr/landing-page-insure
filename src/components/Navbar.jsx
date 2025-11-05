@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { navLinks } from '../../constant';
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(null);
+  
+  useEffect(()=>{
+    const handleResize = () => {
+      if(window.innerWidth >= 768){
+        setOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize)
+  }, []);
   return (
     <nav>
       <div>
